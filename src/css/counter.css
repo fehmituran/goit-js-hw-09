@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #2f363e;
+}
+
+
+.inputDate{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputDate button {
+    margin-left: 20px;
+}
+
+.inputDate input {
+    border: 0;
+    border-bottom: 2px solid gray;
+    height: 45px;
+    width: 300px;
+    color: rgba(255, 255, 255, 0.4);
+    background: #262c37;
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center; 
+}
+
+.inputDate input:hover {
+    border-bottom: 2px solid #2894ff;
+    color: #fff; 
+}
+
+.inputDate .selected {
+    border-bottom: 2px solid #2894ff;
+    color: #fff; 
+}
+
+
+.timer{
+   
+    height: 350px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+.timer .circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer .circle svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.timer .circle svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 8;
+    stroke: #282828;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.timer .circle svg circle:nth-child(2){
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.timer div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.timer div span{
+    position: absolute;
+   transform: translateX(-50%) translateY(-10px);
+    font-size: 0.35em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.timer .dots{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1000;
+}
+
+.timer .dots::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+
+  width: 15px;
+  height: 15px;
+  background: var(--clr);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
