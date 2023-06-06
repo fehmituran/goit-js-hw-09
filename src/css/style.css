@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap");
+
+body {
+  background: #263038;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#container {
+  box-shadow: 0 15px 15px 1px grey;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 3em auto;
+  height: 350px;
+  width: 1000px;
+}
+
+.breed-details {
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  padding: 30px;
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+
+#container .breed-details h1 {
+  font-family: "Bebas Neue", cursive;
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  color: #344055;
+  margin: 0;
+}
+
+#container .breed-details h3 {
+    font-family: "Bree Serif", serif;
+    display: inline-block;
+    position: relative;
+    color: #344055;
+    margin: 0;
+  }
+
+#container .breed-details h1:before {
+  position: absolute;
+  content: "";
+  right: 0%;
+  top: 0%;
+  transform: translate(25px, -15px);
+  font-family: "Bree Serif", serif;
+  display: inline-block;
+  background: #ffe6e6;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px;
+  color: white;
+  margin: 0;
+  animation: chan-sh 6s ease infinite;
+}
+
+#container .breed-details > p {
+  font-family: "EB Garamond", serif;
+  text-align: center;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+
+
+.breed-image {
+  transition: all 0.3s ease-out;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 40%;
+  float: right;
+  
+}
+
+#container img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  
+}
+
+.info {
+  background: rgba(27, 26, 26, 0.9);
+  font-family: "Bree Serif", serif;
+  transition: all 0.3s ease-out;
+  transform: translateX(-100%);
+  position: absolute;
+  line-height: 1.8;
+  text-align: left;
+  font-size: 105%;
+  cursor: pointer;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.info h2 {
+  text-align: center;
+}
+.breed-image:hover .info {
+  transform: translateX(0);
+}
+
+.info ul li {
+  transition: 0.3s ease;
+}
+
+.info ul li:hover {
+  transform: translateX(50px) scale(1.3);
+}
+
+.breed-image:hover img {
+  transition: all 0.3s ease-out;
+}
+.breed-image:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+
+
+.select-breed{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.breed-select{
+  height: 40px;
+  border-width: 0 0 2px 0;
+   border-style: solid;
+   border-color: #f87009;
+   box-shadow: 0 10px 15px 1px grey;
+   outline: none;
+   scroll-behavior: smooth;
+   font-family: "Bree Serif", serif;
+   color: #344055; 
+ 
+}
+
+.select-info{
+  width: 300px;
+}
+
+.inf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+
+.error {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  color: #f87009;
+}
+
+.cat-info {
+  display: flex;
+  justify-content: center;
+}
